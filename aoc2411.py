@@ -15,8 +15,9 @@ spam = {i: 1 for i in numbers}
 
 for i in range(75):
     afterblink = defaultdict(int)
-    print(i)
+    #print(i)
     for number, count in spam.items():
+        print(number)
         if number == 0:
             afterblink[1] += count
         else:
@@ -29,6 +30,6 @@ for i in range(75):
             else:
                 afterblink[number * 2024] += count
     spam = afterblink 
-    print(spam)
+    #print(spam)
     
 print(sum(spam.values()))
