@@ -34,7 +34,7 @@ with open("aoc2402.txt") as file:
         if problemIndex < 0:
             count += 1
         else:
-            for j in [problemIndex - 1, problemIndex, problemIndex + 1]:
+            for j in [problemIndex, problemIndex + 1, problemIndex - 1]:
                 reportCopy = report.copy()
                 reportCopy.pop(j)
 
@@ -43,7 +43,7 @@ with open("aoc2402.txt") as file:
                     break
 
 
-print(count)
+    print(count)
 
 
 
